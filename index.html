@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- viewport for webpage -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Assignment 1</title>
+    <style>
+      @media only screen and (max-width:480px) {/* screen and text adjust for scren */
+          p{text-align: justify; letter-spacing: 1px} /*increase letter spacing on wider screens for neater effect*/
+          img{width: 40%; height: 100%; max-height: 100px;} /* auto adjust pictures to screen size */
+        }
+
+      @media only screen and (min-width:481px) and (max-width:768px) {/* screen and text adjust for scren */
+          p{text-align: justify; letter-spacing: 2px} /*increase letter spacing on wider screens for neater effect*/
+          img{width: 40%; height: 100%; max-height: 300px;} /* auto adjust pictures to screen size */
+        }
+
+      @media only screen and (min-width:769px) { /* screen and text adjust for scren */
+          p{text-align: justify; letter-spacing: 3px} /*increase letter spacing on wider screens for neater effect*/
+          img{width: 100%; height: 100%; max-height: 600px;} /* auto adjust pictures to screen size */
+        }
+      .center {/* center images */
+          text-align:center;
+          width:100%;
+        }
+      #round_corners { /* for rounded corner on headings */
+      border-radius: 30px 30px 30px 30px; /* even corner sizes */
+      background: blue;
+      padding: 3px; /* the best centering I could get */
+      width: auto; /* will adapt to screen width */
+      height: 100px; /*big enough for text */
+      text-align: center; /* center text */
+        }
+    </style>
+  </head>
+    <body>
+      <outer style="margin-top:40px;" class="col-md-offset-2 col-sm-8 col-sm-offset-2"> <!-- makes webpage a container so it doesn't fill the whole window  -->
+        <style>
+          body{background-color:#979A9A; <!-- This changes the overall color to a slightly darker white because its easier on my eyes when viewing --> }
+          h2{background-color:blue; color:white; text-transform: uppercase;} /* makes header bg blue and uppercase*/
+          h4{background-color:blue; color:white; text-transform: uppercase;} /* makes header bg blue and uppercase*/
+        </style>
+        <div id="round_corners" width="100px;">
+          <h2><i>David Toro</i></h2>
+          <h4>COMP335 Fall 2017</h4>
+        </div>
+
+        <div class="center">
+          <a href="https://www.facebook.com/david.toro1993">
+          <i class="fa fa-facebook-official" style="font-size:36px;"></i><p></p>
+        </a>
+        </div>
+        <div class="col-6 col-md-4"> <!-- 1 of 3 columns taking up 33.3% of the page on full screen -->
+          <p style="margin-top:20px">
+            My name is David. I am 24 years old, and am a fifth year senior at Bridgewater State University.
+            My current major is Criminal Justice with a minor in Computer Science. I plan to pursue a second Bachelor's Degree in the future.</p>
+          <p>My career goal would be to work in cyber security. I currently work for DoD Security for General Dyanmics; a global aerospace and defense company.
+            I have a few potential job opportunities within the company, but only after I earn my Bachelor's Degree.
+          <a href="http://www.generaldynamics.com/">
+            <img src="images\gd-logo1.png" style="width:170px;height:20px;"></a>
+          <a href="https://www.facebook.com/GDMissionSystems/">
+            <i class="fa fa-facebook-official" style="font-size:20px;"></i></a>
+          <a href="https://twitter.com/GDMS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <i class="fa fa-twitter" style="font-size:20px;"></i></a></p>
+        </div>
+        <div class="col-6 col-md-4"> <!-- 1 of 3 columns taking up 33.3% of the page on full screen -->
+          <p style="margin-top:20px">I am a tech geek and enjoy playing with electronics, keeping up with the latest tech, and news. I also enjoy playing video games whether
+            on console or PC. I have built a PC with the latest specifications that could run any game on the market today. I am not sure about
+            a few years from now, but then again, technology constantly changes.</p>
+        </div>
+        <div class="col-6 col-md-4"> <!-- 1 of 3 columns taking up 33.3% of the page on full screen -->
+          <p><center><img src="images\IMG_4153.JPG"><img src="images\IMG_3601.JPG"></center></p>
+        </div>
+      </outer>
+    </body>
+</html>
